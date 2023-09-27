@@ -126,7 +126,7 @@ body {
   background-color: var(--yellow);
 }
 
-.Focus-descrete .Accordion-module_accordion__LVhhv:focus {
+.Focus-descrete .Accordion-module_accordion__LVhhv button:focus {
   outline: 3px solid var(--yellow);
   outline-offset: 3px;
   box-shadow: 0 0 0 3px var(--dark);
@@ -137,6 +137,19 @@ body {
   outline-offset: 3px;
   box-shadow: 0 0 0 3px var(--dark);
   background: var(--yellow) !important;
+}
+
+.focus-descrete .tabs .tab:focus {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+}
+
+.focus-heavy .tabs .tab:focus {
+  outline: none;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+  background-color: var(--yellow) !important;
 }
 
 .sidebar-links {

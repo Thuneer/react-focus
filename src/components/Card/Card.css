@@ -48,3 +48,9 @@
   outline: 3px solid var(--dark);
   box-shadow: 0 0 0 6px var(--yellow);
 }
+
+.Focus-heavy .fds-card:focus {
+  outline: 3px solid var(--dark);
+  box-shadow: none;
+  background-color: var(--yellow);
+}

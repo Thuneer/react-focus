@@ -10,7 +10,15 @@
   padding: 16px 39px;
   color: #68707c;
   transition: 0.1s all;
+  border-radius: 3px;
 }
+
+.tabs .tab:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+}
+
 .tabs .tab:hover {
   color: black;
 }
@@ -26,6 +34,10 @@
   width: 100%;
   background-color: transparent;
   transition: 0.1s all;
+}
+
+.tabs .tab:hover:after {
+  background-color: rgb(206, 206, 206);
 }
 
 .tabs .tab.active:after {
@@ -46,4 +58,17 @@
 .body-images {
   background-color: white;
   padding: 20px 0 0 0;
+}
+
+.Focus-descrete .tabs .tab:focus {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+}
+
+.Focus-heavy .tabs .tab:focus {
+  outline: none;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+  background-color: var(--yellow) !important;
 }
