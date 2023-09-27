@@ -1,7 +1,7 @@
 {
   "name": "react-focus2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://thuneer.github.io/react-focus",
   "dependencies": {
     "@altinn/figma-design-tokens": "^6.0.1",
