@@ -62,6 +62,14 @@ export const DashboardPage = () => {
                   <Button size="small" className={classes.addBtn}>
                     Legg til bruker
                   </Button>
+                  <Button
+                    size="small"
+                    variant="outline"
+                    color="secondary"
+                    className={classes.addBtn}
+                  >
+                    Vis liste
+                  </Button>
                 </div>
                 <div className={classes.toolbarRight}>
                   <Switch size="small">Vis kun ledere</Switch>
