@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-focus/static/css/main.18acdb00.css",
+    "main.css": "/react-focus/static/css/main.d3aca371.css",
     "main.js": "/react-focus/static/js/main.9f665fb3.js",
     "static/media/shapes.png": "/react-focus/static/media/shapes.19fa4c1957e091236394.png",
     "index.html": "/react-focus/index.html",
-    "main.18acdb00.css.map": "/react-focus/static/css/main.18acdb00.css.map",
+    "main.d3aca371.css.map": "/react-focus/static/css/main.d3aca371.css.map",
     "main.9f665fb3.js.map": "/react-focus/static/js/main.9f665fb3.js.map"
   },
   "entrypoints": [
-    "static/css/main.18acdb00.css",
+    "static/css/main.d3aca371.css",
     "static/js/main.9f665fb3.js"
   ]
 }
