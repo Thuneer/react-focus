@@ -5,9 +5,11 @@ import { TrashIcon } from "@navikt/aksel-icons";
 type UserRowProps = {
   name: string;
   index: number;
+  checked: boolean;
+  onChanged: Function;
 };
 
-export const UserRow = ({ name, index }: UserRowProps) => {
+export const UserRow = ({ name, index, checked, onChanged }: UserRowProps) => {
   const getRandomColor = (number: number) => {
     var letters = "0123456789ABCDEF",
       color = "#",
@@ -23,7 +25,13 @@ export const UserRow = ({ name, index }: UserRowProps) => {
   return (
     <div className={classes.row}>
       <div>
-        <Checkbox size="small" description="" value="value" />
+        <Checkbox
+          size="small"
+          description=""
+          value="value"
+          checked={checked}
+          onClick={(e: any) => onChanged(name, e.target.checked)}
+        />
       </div>
       <div
         className={classes.img}

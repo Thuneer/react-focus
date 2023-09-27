@@ -14,15 +14,33 @@ import { Search } from "../../components/Search/Search";
 import { Tabs, TabsBody } from "../../components/Tabs/Tabs";
 
 export const DashboardPage = () => {
-  const users = [
-    { name: "Alexis Cantu" },
-    { name: "Rey Solis" },
-    { name: "Destiny Thomas" },
-    { name: "Triston Duarte" },
-    { name: "Desiree Peck" },
-    { name: "Catherine Gamble" },
-  ];
+  const [users, setUsers] = useState([
+    { name: "Alexis Cantu", checked: false },
+    { name: "Rey Solis", checked: false },
+    { name: "Destiny Thomas", checked: false },
+    { name: "Triston Duarte", checked: false },
+    { name: "Desiree Peck", checked: false },
+    { name: "Catherine Gamble", checked: false },
+  ]);
+
   const [activeTab, setActiveTab] = useState(1);
+
+  const checkUsers = (e: any) => {
+    let newArr = [...users];
+    for (let i = 0; i < newArr.length; i++) {
+      newArr[i].checked = e.target.checked;
+    }
+    setUsers(newArr);
+  };
+
+  const setChecked = (name: string, checked: boolean) => {
+    let newArr = [...users];
+    const user = newArr.find((item) => item.name === name);
+    if (user) {
+      user.checked = checked;
+      setUsers(newArr);
+    }
+  };
 
   return (
     <div className={classes.page}>
@@ -35,7 +53,12 @@ export const DashboardPage = () => {
               </Heading>
               <div className={classes.toolbar}>
                 <div className={classes.toolbarLeft}>
-                  <Checkbox size="small" description="" value="value" />
+                  <Checkbox
+                    size="small"
+                    description=""
+                    value="value"
+                    onClick={(e) => checkUsers(e)}
+                  />
                   <Button size="small" className={classes.addBtn}>
                     Legg til bruker
                   </Button>
@@ -47,7 +70,15 @@ export const DashboardPage = () => {
               </div>
               <div className={classes.items}>
                 {users.map((item, index) => (
-                  <UserRow name={item.name} index={index}></UserRow>
+                  <UserRow
+                    key={index}
+                    name={item.name}
+                    index={index}
+                    checked={item.checked}
+                    onChanged={(name: string, checked: boolean) =>
+                      setChecked(name, checked)
+                    }
+                  ></UserRow>
                 ))}
               </div>
               <div className={classes.pagination}>

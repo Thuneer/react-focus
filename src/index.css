@@ -87,3 +87,29 @@ body {
   stroke: var(--dark);
   fill: var(--dark);
 }
+
+.Focus-descrete
+  .Switch-module_input__cLrzj:focus:not(:disabled)
+  ~ .Switch-module_icon__3JYf5 {
+  outline: 3px solid var(--yellow);
+  outline-offset: 0;
+}
+
+.Focus-heavy
+  .Switch-module_input__cLrzj:focus:not([readonly], :disabled)
+  ~ .Switch-module_icon__3JYf5
+  > .Switch-module_track__yUoQl {
+  color: var(--yellow);
+}
+
+.Focus-heavy
+  .Switch-module_input__cLrzj:focus:not([readonly], :disabled)
+  ~ .Switch-module_icon__3JYf5 {
+  outline: 3px solid var(--dark);
+}
+
+.Focus-heavy
+  .Switch-module_input__cLrzj:focus-visible:not([readonly], :disabled)
+  ~ .Switch-module_icon__3JYf5 {
+  outline: none;
+}
