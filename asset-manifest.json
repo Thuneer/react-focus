@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-focus/static/css/main.e88d4486.css",
-    "main.js": "/react-focus/static/js/main.de19b58d.js",
+    "main.css": "/react-focus/static/css/main.18acdb00.css",
+    "main.js": "/react-focus/static/js/main.6433f917.js",
     "static/media/shapes.png": "/react-focus/static/media/shapes.19fa4c1957e091236394.png",
     "index.html": "/react-focus/index.html",
-    "main.e88d4486.css.map": "/react-focus/static/css/main.e88d4486.css.map",
-    "main.de19b58d.js.map": "/react-focus/static/js/main.de19b58d.js.map"
+    "main.18acdb00.css.map": "/react-focus/static/css/main.18acdb00.css.map",
+    "main.6433f917.js.map": "/react-focus/static/js/main.6433f917.js.map"
   },
   "entrypoints": [
-    "static/css/main.e88d4486.css",
-    "static/js/main.de19b58d.js"
+    "static/css/main.18acdb00.css",
+    "static/js/main.6433f917.js"
   ]
 }
