@@ -20,7 +20,7 @@ export const Header = () => {
     e.preventDefault();
     setTimeout(() => {
       setShowMega(false);
-      navigate("/theme");
+      navigate("/innovasjon");
     }, 150);
   };
 
@@ -74,12 +74,12 @@ export const Header = () => {
                   <div className={classes.list}>
                     {[...Array(6)].map((x, i) => (
                       <Link
-                        to="/"
+                        to="/innovasjon"
                         as={RouterLink}
                         className={classes.link}
                         onClick={(e) => onClickLink(e)}
                       >
-                        Her er en lenke til en side
+                        Her er en lenke til innovasjon
                       </Link>
                     ))}
                   </div>
