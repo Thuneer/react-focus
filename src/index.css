@@ -126,6 +126,16 @@ body {
   background-color: var(--yellow);
 }
 
+.Only-focus-visible .Accordion-module_accordion__LVhhv button:focus {
+  outline: 0;
+}
+
+.Only-focus-visible .Accordion-module_accordion__LVhhv button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+}
+
 .Focus-descrete .Accordion-module_accordion__LVhhv button:focus {
   outline: 3px solid var(--yellow);
   outline-offset: 3px;
@@ -137,19 +147,6 @@ body {
   outline-offset: 3px;
   box-shadow: 0 0 0 3px var(--dark);
   background: var(--yellow) !important;
-}
-
-.focus-descrete .tabs .tab:focus {
-  outline: 3px solid var(--yellow);
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px var(--dark);
-}
-
-.focus-heavy .tabs .tab:focus {
-  outline: none;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px var(--dark);
-  background-color: var(--yellow) !important;
 }
 
 .sidebar-links {
