@@ -104,6 +104,13 @@ body {
 }
 
 .Focus-heavy
+  .Switch-module_input__cLrzj:focus:hover:not([readonly], :disabled)
+  ~ .Switch-module_icon__3JYf5
+  > .Switch-module_track__yUoQl {
+  color: var(--yellow);
+}
+
+.Focus-heavy
   .Switch-module_input__cLrzj:focus:not([readonly], :disabled)
   ~ .Switch-module_icon__3JYf5 {
   outline: 3px solid var(--dark);
