@@ -1,0 +1,10 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.breadcrumbs a:visited {
+  color: var(--link);
+}

@@ -7,25 +7,27 @@ import cn from "classnames";
 
 type CardProps = {
   color: string;
+  title: string;
+  url: string;
 };
 
-export const Card = ({ color }: CardProps) => {
+export const Card = ({ color, title, url }: CardProps) => {
   const navigate = useNavigate();
   const onClick = (e: any) => {
     e.preventDefault();
     setTimeout(() => {
-      navigate("/theme");
+      navigate(url);
     }, 150);
   };
 
   return (
     <Link
       onClick={(e) => onClick(e)}
-      to="/theme"
+      to={url}
       className={cn("fds-card", color)}
     >
       <Heading spacing={true} size="small">
-        Innovasjon i offentlig sektor
+        {title}
       </Heading>
       <Paragraph size="small">
         Innovasjon er å fornye eller lage noe nytt som skaper verdi for

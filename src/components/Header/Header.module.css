@@ -7,6 +7,13 @@
 
 .header {
   border-bottom: 1px solid rgb(219, 219, 219);
+  position: relative;
+  z-index: 5;
+}
+
+.left {
+  display: flex;
+  align-items: center;
 }
 
 .right {
@@ -80,4 +87,10 @@
 
 .link {
   width: 190px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
 }

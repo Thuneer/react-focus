@@ -1,7 +1,17 @@
-.cards {
-  display: grid;
-  grid-row-gap: 32px;
-  grid-column-gap: 32px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-  margin-top: 48px;
+.bg {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  left: 0;
+  height: 600px;
+  background-image: url("../../../public/shapes.png");
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
 }

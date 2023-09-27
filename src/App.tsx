@@ -17,9 +17,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<FrontPage />}></Route>
-        <Route path="/theme" element={<ThemePage />}></Route>
-        <Route path="/theme/one" element={<ChildOnePage />}></Route>
-        <Route path="/theme/two" element={<ChildTwoPage />}></Route>
+        <Route path="/innovasjon" element={<ThemePage />}></Route>
+        <Route path="/innovasjon/stimulab" element={<ChildOnePage />}></Route>
+        <Route path="/innovasjon/start-off" element={<ChildTwoPage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/dashboard" element={<DashboardPage />}></Route>
       </Routes>

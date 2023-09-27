@@ -58,7 +58,7 @@ body {
   padding-left: 35px !important;
 }
 
-.LoginForm_form__IwkZI .Textfield-module_input__N-6KN {
+.LoginForm_form__ZgXkv .Textfield-module_input__N-6KN {
   padding-left: 12px !important;
 }
 
@@ -112,4 +112,55 @@ body {
   .Switch-module_input__cLrzj:focus-visible:not([readonly], :disabled)
   ~ .Switch-module_icon__3JYf5 {
   outline: none;
+}
+
+.Focus-descrete .HeaderLink_link__5rZJG:focus {
+  outline: 3px solid var(--yellow);
+  box-shadow: 0 0 0 3px var(--dark);
+  outline-offset: 3px;
+}
+
+.Focus-heavy .HeaderLink_link__5rZJG:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--dark);
+  background-color: var(--yellow);
+}
+
+.Focus-descrete .Accordion-module_accordion__LVhhv:focus {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+}
+
+.Focus-heavy .Accordion-module_accordion__LVhhv button:focus {
+  outline: none;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--dark);
+  background: var(--yellow) !important;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links a {
+  margin-top: 24px;
+  color: inherit;
+}
+
+.sidebar-links a:visited {
+  color: var(--link);
+}
+
+.content {
+  max-width: 750px;
+}
+
+.content .Accordion-module_accordion__LVhhv {
+  margin-bottom: 24px;
+}
+
+.content h2 {
+  margin-top: 40px;
 }

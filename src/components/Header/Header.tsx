@@ -5,6 +5,7 @@ import { Button, Heading, Link } from "@digdir/design-system-react";
 import { PersonIcon, MenuHamburgerIcon, XMarkIcon } from "@navikt/aksel-icons";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { removeFocus } from "../../utils/RemoveFocus";
+import { HeaderLink } from "../HeaderLink/HeaderLink";
 export const Header = () => {
   const navigate = useNavigate();
   const [showMega, setShowMega] = useState(false);
@@ -26,10 +27,15 @@ export const Header = () => {
   return (
     <header className={classes.header}>
       <Container className={classes.container}>
-        <div>
+        <div className={classes.left}>
           <RouterLink to="/">
             <img src="logo.svg" alt="Logo" />
           </RouterLink>
+          <div className={classes.links}>
+            <HeaderLink url="/innovasjon" text="Innovasjon" />
+            <HeaderLink url="/innovasjon/stimulab" text="Stimulab" />
+            <HeaderLink url="/innovasjon/start-off" text="StartOff" />
+          </div>
         </div>
         <div className={classes.right}>
           <Button
