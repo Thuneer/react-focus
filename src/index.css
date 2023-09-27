@@ -34,13 +34,6 @@ body {
   outline: none;
 }
 
-.Focus-descrete .Link-module_link__Ly-e3:focus {
-  background-color: transparent;
-  outline: 3px solid var(--dark);
-  box-shadow: 0 0 0 6px var(--yellow);
-  border-radius: 2px;
-}
-
 .Only-focus-visible .Link-module_link__Ly-e3:focus {
   background-color: transparent;
   outline: none;
@@ -50,8 +43,16 @@ body {
 }
 
 .Only-focus-visible .Link-module_link__Ly-e3:focus-visible {
-  background-color: transparent;
+  box-shadow: 0 max(3px, 0.1875rem, 0.18em) var(--dark);
   background-color: var(--yellow);
+  text-decoration: none;
+}
+
+.Focus-descrete .Link-module_link__Ly-e3:focus {
+  background-color: transparent;
+  outline: 3px solid var(--dark);
+  box-shadow: 0 0 0 6px var(--yellow);
+  border-radius: 2px;
 }
 
 .Textfield-module_input__N-6KN {
