@@ -1,0 +1,27 @@
+.form {
+  width: 450px;
+  background-color: white;
+  border-radius: 8px;
+  padding: var(--fds-spacing-12);
+  box-shadow: var(--fds-shadow-small);
+}
+
+.form label {
+  margin-top: 24px;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.errorText {
+  margin-top: 8px;
+}
+
+.alert {
+  margin-bottom: 32px;
+}

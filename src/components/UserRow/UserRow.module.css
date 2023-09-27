@@ -1,0 +1,23 @@
+.row {
+  border-bottom: 1px solid var(--fds-semantic-border-neutral-subtle);
+  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row:last-child {
+  margin-bottom: -1px;
+}
+
+.name {
+  margin-left: 16px;
+  margin-right: auto;
+}
+
+.img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-left: 24px;
+}

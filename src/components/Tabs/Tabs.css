@@ -1,0 +1,49 @@
+.tabs {
+  border-bottom: 1px solid #c9c9c9;
+  margin-top: 12px;
+}
+
+.tabs .tab {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 16px 39px;
+  color: #68707c;
+  transition: 0.1s all;
+}
+.tabs .tab:hover {
+  color: black;
+}
+
+.tabs .tab:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px;
+  width: 100%;
+  background-color: transparent;
+  transition: 0.1s all;
+}
+
+.tabs .tab.active:after {
+  background-color: var(--link);
+}
+
+.tabs .tab.active {
+  color: var(--link);
+}
+
+.body {
+  padding: 0;
+  margin-top: 24px;
+  border-radius: 0 0 4px 4px;
+  line-height: 1.5em;
+}
+
+.body-images {
+  background-color: white;
+  padding: 20px 0 0 0;
+}

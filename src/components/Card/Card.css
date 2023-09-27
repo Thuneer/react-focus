@@ -1,0 +1,50 @@
+.fds-card {
+  text-decoration: none;
+  padding: 32px;
+  border-radius: 4px;
+  display: block;
+  transition: 0.1s all;
+}
+
+.red {
+  background-color: var(--fds-brand-primary-300);
+}
+
+.blue {
+  background-color: var(--fds-brand-tertiary-300);
+}
+
+.yellow {
+  background-color: var(--fds-brand-secondary-300);
+}
+
+.fds-card.red:hover {
+  background-color: var(--fds-brand-primary-400);
+}
+.fds-card.blue:hover {
+  background-color: var(--fds-brand-tertiary-400);
+}
+.fds-card.yellow:hover {
+  background-color: var(--fds-brand-secondary-400);
+}
+
+.fds-card.red:active {
+  background-color: var(--fds-brand-primary-500);
+}
+.fds-card.blue:active {
+  background-color: var(--fds-brand-tertiary-500);
+}
+.fds-card.yellow:active {
+  background-color: var(--fds-brand-secondary-500);
+}
+
+.Only-focus-visible .fds-card:focus-visible {
+  outline: 3px solid var(--dark);
+  box-shadow: 0 0 0 6px var(--yellow);
+}
+
+.Focus-descrete .fds-card:focus,
+.Focus-heavy .fds-card:focus {
+  outline: 3px solid var(--dark);
+  box-shadow: 0 0 0 6px var(--yellow);
+}

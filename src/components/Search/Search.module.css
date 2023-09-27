@@ -1,0 +1,11 @@
+.search {
+  position: relative;
+  margin-left: 24px;
+}
+
+.icon {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  z-index: 5;
+}
