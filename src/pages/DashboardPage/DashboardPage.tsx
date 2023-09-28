@@ -24,6 +24,7 @@ export const DashboardPage = () => {
   ]);
 
   const [activeTab, setActiveTab] = useState(1);
+  const [activePag, setActivePag] = useState(1);
 
   const checkUsers = (e: any) => {
     let newArr = [...users];
@@ -40,6 +41,10 @@ export const DashboardPage = () => {
       user.checked = checked;
       setUsers(newArr);
     }
+  };
+
+  const pagClicked = (e: any) => {
+    setActivePag(e);
   };
 
   return (
@@ -91,9 +96,9 @@ export const DashboardPage = () => {
               </div>
               <div className={classes.pagination}>
                 <Pagination
-                  currentPage={1}
+                  currentPage={activePag}
                   nextLabel="Neste"
-                  onChange={function noRefCheck() {}}
+                  onChange={(e) => pagClicked(e)}
                   previousLabel="Forrige"
                   size="small"
                   totalPages={10}

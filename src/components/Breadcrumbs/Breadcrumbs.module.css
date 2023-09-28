@@ -8,3 +8,7 @@
 .breadcrumbs a:visited {
   color: var(--link);
 }
+
+.breadcrumbs svg {
+  margin: 0 3px;
+}

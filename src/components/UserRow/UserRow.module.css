@@ -21,3 +21,13 @@
   border-radius: 50%;
   margin-left: 24px;
 }
+
+.row:nth-child(3n + 1) .img {
+  background-color: var(--fds-brand-primary-300);
+}
+.row:nth-child(3n + 2) .img {
+  background-color: var(--fds-brand-secondary-300);
+}
+.row:nth-child(3n + 3) .img {
+  background-color: var(--fds-brand-tertiary-300);
+}

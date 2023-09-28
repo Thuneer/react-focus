@@ -33,10 +33,7 @@ export const UserRow = ({ name, index, checked, onChanged }: UserRowProps) => {
           onClick={(e: any) => onChanged(name, e.target.checked)}
         />
       </div>
-      <div
-        className={classes.img}
-        style={{ backgroundColor: getRandomColor(index) }}
-      ></div>
+      <div className={classes.img}></div>
       <div className={classes.name}>{name}</div>
       <div>
         <Button variant="quiet" color="danger" icon={<TrashIcon />} />

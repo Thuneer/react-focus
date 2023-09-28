@@ -10,6 +10,7 @@ import "@digdir/design-system-tokens/brand/digdir/tokens.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./components/Card/Card.css";
+import "./overrides.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

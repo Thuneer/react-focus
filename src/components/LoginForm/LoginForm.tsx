@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { Button, Textfield, Heading } from "@digdir/design-system-react";
+import {
+  Button,
+  Textfield,
+  Heading,
+  Spinner,
+} from "@digdir/design-system-react";
 import { useNavigate } from "react-router-dom";
 
 import classes from "./LoginForm.module.css";
@@ -27,11 +32,13 @@ type ValuesType = {
 
 export const LoginForm = () => {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const tryToLoginUser = async (values: ValuesType) => {
+    setLoading(true);
     setTimeout(() => {
       navigate("/dashboard");
-    }, 150);
+    }, 1000);
   };
 
   return (
@@ -65,7 +72,9 @@ export const LoginForm = () => {
             />
 
             <Button type="submit" fullWidth className={classes.button}>
-              Logg inn
+              {loading && <Spinner title="ff" />}
+
+              {!loading && <>Logg inn</>}
             </Button>
           </Form>
         )}

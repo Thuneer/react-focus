@@ -1,6 +1,6 @@
 import classes from "./Search.module.css";
 import { MagnifyingGlassIcon } from "@navikt/aksel-icons";
-import { Textfield } from "@digdir/design-system-react";
+import { Textfield, Button } from "@digdir/design-system-react";
 
 export const Search = () => {
   return (
@@ -10,7 +10,15 @@ export const Search = () => {
         fontSize="1.5rem"
         className={classes.icon}
       />
-      <Textfield description="" label="" size="small" />
+      <Textfield
+        description=""
+        label=""
+        size="small"
+        placeholder="Søk her..."
+      />
+      <Button size="small" variant="outline" color="secondary">
+        Søk
+      </Button>
     </div>
   );
 };
